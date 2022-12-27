@@ -32,12 +32,14 @@ export function App() {
         <a>transferWallet</a>
         <div className='wrapper'>
           <button onClick={() => getMetamaskProvider()}>🦊 Connect wallet </button>
-          <button onClick={() => handleGetBalance()}>{balance}</button>
+          
         </div>
       </header>
-    <main>
 
-      <div className='inputWrapper'><p>From: </p>  
+    <main>
+      <div className='inputWrapper'>
+        <button onClick={() => handleGetBalance()}>{balance}</button>
+        <p>From: </p>  
         <input 
           type="text"
           value={address}
@@ -46,7 +48,8 @@ export function App() {
           }/>
       </div>
 
-      <div className='inputWrapper'><p>To: </p>  
+      <div className='inputWrapper'>
+        <p>To: </p>  
         <input 
           type="text"
           value={to}
@@ -55,7 +58,8 @@ export function App() {
           }/>
       </div>
 
-      <div className='inputWrapper'><p>Quantity: </p>  
+      <div className='inputWrapper'>
+        <p>Quantity: </p>  
         <input 
           type="text"
           value={quantity}

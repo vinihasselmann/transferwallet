@@ -62,6 +62,17 @@ export const AppContainer = styled.div`
     justify-content: space-between;
     }
 
+    button:first-child {
+        width: 150px;
+        height: 30px;
+        background-color: #29292E;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
     button {
         width: 200px;
         height: 50px;
@@ -83,4 +94,60 @@ export const AppContainer = styled.div`
         color: white;
     }
 }
+
+@media (max-width: 860px) {
+
+    header {
+        
+        a {
+            font-size: 18px;
+        }
+
+        .wrapper {
+            gap: 10px;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+    main {
+        width: 80%;
+    }
+}
+
+@media (max-width: 530px) {
+
+header {
+    
+    a {
+        font-size: 14px;
+    }
+
+    .wrapper {
+        gap: 10px;
+
+        button {          
+            width: 100%;
+        }
+
+        button:nth-child(2) {
+            visibility: hidden;
+        }
+    }
+}
+
+main {
+    width: 80%;
+}
+
+.inputWrapper {
+    input {
+        width: 200px;
+    }
+
+}
+}
+
 `
